@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #dc2828;
+}
+body {
+  margin: 0;
+  background-color: #eee;
+  font-family: Roboto, Arial;
+}
+h1 {
+  text-align: center;
+  padding: 20px;
+  margin: 0 0 50px;
+  background-color: white;
+}
+.guess-game {
+  text-align: center;
+  width: 1000px;
+  margin: 20px auto;
+  align-items: flex-start;
+  justify-content: space-between;
+  display: flex;
+}
+.guess-game .game-area .inputs > div {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.guess-game .game-area .inputs > div span {
+  font-size: 30px;
+  margin-right: 15px;
+  font-weight: bold;
+}
+.guess-game .game-area .inputs .disabled-inputs {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.guess-game .game-area .inputs input {
+  margin: 0 6px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 50px;
+  caret-color: var(--primary-color);
+  background: white;
+  border: none;
+  border-bottom: 3px solid #333;
+}
+.guess-game .game-area .inputs input:focus {
+  outline-color: #ccc;
+}
+.guess-game .game-area .inputs input.yes-in-place {
+  background-color: #f89e13;
+  border: #f89e13;
+  color: white;
+}
+.guess-game .game-area .inputs input.not-in-place {
+  background-color: #18ba89;
+  border: #18ba89;
+  color: white;
+}
+.guess-game .game-area .inputs input.no {
+  background-color: #27303f;
+  border: #27303f;
+  color: white;
+}
+.guess-game .key-colors .key-color {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.guess-game .key-colors .key-color .key {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+.guess-game .key-colors .key-color .key.in-place {
+  background-color: #f89e13;
+}
+.guess-game .key-colors .key-color .key.not-in-place {
+  background-color: #18ba89;
+}
+.guess-game .key-colors .key-color .key.no {
+  background-color: #27303f;
+}
+.guess-game .key-colors .key-color .key-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.message {
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  
+}
+
+
+.message span {
+    font-weight: bold;
+    display: block;
+    font-size: 20px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    margin-top: 10px;
+  }
+
+
+
+.control {
+  display:  grid ; 
+  grid-template-columns: 2fr 1fr;
+
+}
+
+.control .check {
+  border-radius: 5px ;
+  background-color: #f89e13;
+  font-size: 19px;
+  padding: 5px ;
+
+
+}
+.control .hint {
+  border-radius: 5px ;
+  background-color: rgb(96, 209, 96);
+  font-size: 19px;
+  padding: 5px ;
+
+
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+}
